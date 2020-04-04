@@ -1,0 +1,31 @@
+{
+  "name": "torbit",
+  "version": "1.0.0",
+  "description": "Landing page for phone review",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass-1":"node-sass sass/bootstrap.scss css/bootstrap.css -w",
+    "watch:sass-2":"node-sass sass/style.scss css/styles.css -w",
+    "devserver":"live-server",
+    "start":"npm-run-all --parallel devserver watch:sass-1 watch:sass-2",
+    "compile:sass-1":"node-sass sass/bootstrap.scss css/bootstrap-compress.css",
+    "compile:sass-2":"node-sass sass/style.scss css/styles-compress.css",
+    "build:css":"npm-run-all compile:sass-1 compile:sass-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SP-2605/Torbit.git"
+  },
+  "author": "Suriya Prasath.S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SP-2605/Torbit/issues"
+  },
+  "homepage": "https://github.com/SP-2605/Torbit#readme",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "post-cli": "^1.0.5"
+  }
+}
