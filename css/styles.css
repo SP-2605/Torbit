@@ -23,7 +23,8 @@ nav .nav-link {
 #showcase .carousel-img-3 {
   background-image: url(../images/image3.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 50% 50%; }
 
 #showcase h2 {
   color: #dee3e2;
@@ -40,21 +41,43 @@ nav .nav-link {
 #home-icon i {
   color: #444444; }
 
-#home-heading {
+#info h2 {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  color: #444444; }
+
+#home-heading, #video {
   position: relative;
   min-height: 250px;
   background-image: url(../images/lights.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  #home-heading h1, #home-heading p {
+  #home-heading h1, #home-heading p, #video h1, #video p {
     font-weight: 700;
     font-family: 'Comfortaa', cursive;
     color: #dee3e2; }
-  #home-heading .home-overlay {
+  #home-heading .overlay, #video .overlay {
     background-color: #33313bb0;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%; }
+
+#video {
+  background-image: url(../images/media.jpg);
+  min-height: 250px; }
+  #video .fas {
+    color: #dee3e2; }
+
+#gallery h1, #gallery p {
+  font-family: 'Comfortaa', cursive;
+  color: #444444; }
+
+#gallery img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }

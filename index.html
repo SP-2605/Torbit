@@ -12,6 +12,8 @@
     <!-- Google-Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <!-- Custom STYLE.CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -107,7 +109,7 @@
     </section>
 
     <!-- HOME-ICON -->
-    <section id="home-icon" class="py-5">
+    <section id="home-icon" class="py-5 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
@@ -134,7 +136,7 @@
     <!-- HOME-HEADING -->
 
     <section id="home-heading">
-        <div class="home-overlay">
+        <div class="overlay">
             <div class="container">
                 <div class="row pt-3">
                     <div class="col text-center py-5">
@@ -150,7 +152,7 @@
     </section>
 
     <!-- INFO -->
-    <section id="section" class="py-4">
+    <section id="info" class="py-4 text-center bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 my-auto">
@@ -161,6 +163,86 @@
                 </div>
                 <div class="col-md-6 py-3">
                     <img src="images/laptop.png" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+
+    <section class="text-center" id="video">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-5">
+                        <h1 class="text-uppercase mb-3">See what we do</h1>
+                        <a href="#" class="video" data-video="https://www.youtube.com/embed/3zSsIhOkMgoo"
+                            data-toggle="modal" data-target="#videoModal">
+                            <i class="fas fa-play fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <iframe src="https://www.youtube.com/embed/3zSsIhOkMgo" frameborder="0" height="350" width="100%"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="text-uppercase">Photo Gallery</h1>
+            <p class="lead text-capitalize">Check out our workspace</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="images/workspace (1).jpg" data-height="560" data-width="560" data-toggle="lightbox">
+                        <img src="images/workspace (1).jpg" class="img-fluid" alt="...">
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <a href="images/workspace (2).jpg" data-height="560" data-width="560" data-toggle="lightbox">
+                        <img src="images/workspace (2).jpg" class="img-fluid" alt="...">
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <a href="images/workspace (3).jpg" data-height="560" data-width="560" data-toggle="lightbox">
+                        <img src="images/workspace (3).jpg" class="img-fluid" alt="...">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="images/workspace (4).jpg" data-height="560" data-width="560" data-toggle="lightbox">
+                        <img src="images/workspace (4).jpg" class="img-fluid" alt="...">
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <a href="images/workspace (5).jpg" data-height="560" data-width="560" data-toggle="lightbox">
+                        <img src="images/workspace (5).jpg" class="img-fluid" alt="...">
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <a href="images/workspace (6).jpg" data-height="560" data-width="560" data-toggle="lightbox">
+                        <img src="images/workspace (6).jpg" class="img-fluid" alt="...">
+                    </a>
                 </div>
             </div>
         </div>
@@ -180,7 +262,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script src="index.js"></script>
+
+    <script>
+        //Light Box
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
 
 </html>
