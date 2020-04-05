@@ -100,15 +100,15 @@ nav .nav-link {
   font-family: 'Comfortaa', cursive;
   color: #444444; }
 
-#about-header {
+#about-header, #service {
   background-image: url(https://source.unsplash.com/random/800x800/?dark);
   background-attachment: fixed;
-  background-position: 0 -300px;
-  background-size: cover; }
-  #about-header h1, #about-header p {
+  background-size: cover;
+  min-height: 250px; }
+  #about-header h1, #about-header p, #service h1, #service p {
     color: #dee3e2;
     font-family: 'Comfortaa', cursive; }
-  #about-header .container {
+  #about-header .container, #service .container {
     width: 50%; }
 
 #about-main h1, #about-main p, #icons h1, #icons p, #testimonial h1, #testimonial p {

@@ -148,11 +148,12 @@ nav{
     }
 }
 
-#about-header{
+#about-header, #service{
     background-image: url(https://source.unsplash.com/random/800x800/?dark);
     background-attachment: fixed;
-    background-position: 0 -300px;
+    // background-position: 0 -300px;
     background-size: cover;
+    min-height: 250px;
 
     h1,p{
         color: $white;
