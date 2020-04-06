@@ -100,15 +100,15 @@ nav .nav-link {
   font-family: 'Comfortaa', cursive;
   color: #444444; }
 
-#about-header, #service {
+#about-header, #service-header, #contact-header {
   background-image: url(https://source.unsplash.com/random/800x800/?dark);
   background-attachment: fixed;
   background-size: cover;
   min-height: 250px; }
-  #about-header h1, #about-header p, #service h1, #service p {
+  #about-header h1, #about-header p, #service-header h1, #service-header p, #contact-header h1, #contact-header p {
     color: #dee3e2;
     font-family: 'Comfortaa', cursive; }
-  #about-header .container, #service .container {
+  #about-header .container, #service-header .container, #contact-header .container {
     width: 50%; }
 
 #about-main h1, #about-main p, #icons h1, #icons p, #testimonial h1, #testimonial p {
