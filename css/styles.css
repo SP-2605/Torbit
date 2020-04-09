@@ -101,7 +101,7 @@ nav .nav-link {
   color: #444444; }
 
 #about-header, #service-header, #contact-header {
-  background-image: url(https://source.unsplash.com/random/800x800/?dark);
+  background-image: url(https://source.unsplash.com/random/800x800/?night);
   background-attachment: fixed;
   background-size: cover;
   min-height: 250px; }
